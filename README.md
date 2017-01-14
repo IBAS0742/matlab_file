@@ -1,3 +1,3 @@
 Matlab demo collect  
 ====
-*Draw something like floor tile (drawBeeShap.m)
+* Draw something like floor tile (drawBeeShap.m)
