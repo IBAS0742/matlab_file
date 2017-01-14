@@ -216,7 +216,7 @@ function forFour(c,len_,colorSheet,data)
 	end
 	%绘制第一行
 	for i = 1 : w_
-		drawOneShap_(x(i),y,4,len__,colorSheet(num2str(data(1,i))),c.pi_d3);
+		drawOneShap_(x(i),y,4,len__,colorSheet(num2str(data(1,i))),c.pi_d4);
 	end
 	%第二行开始，每一行都是前一行高度加上sqrt(3) * len_
 	dY = len_;
@@ -224,7 +224,7 @@ function forFour(c,len_,colorSheet,data)
 	for i = 2 : h_
 		y = y + dY;
 		for j = 1 : w_
-			drawOneShap_(x(j),y,4,len__,colorSheet(num2str(data(i,j))),c.pi_d3);
+			drawOneShap_(x(j),y,4,len__,colorSheet(num2str(data(i,j))),c.pi_d4);
 		end
 	end
 end
