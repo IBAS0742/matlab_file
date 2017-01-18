@@ -1,11 +1,11 @@
 %testDearCellAndDrawBeeShap(5,4,1000,0.01)
 function testDearCellAndDrawBeeShap(n,base,times,timespan,varargin)
     %
-    %ç»˜åˆ¶        n * n
-    %base       è¾¹æ•°
-    %times      æ¬¡æ•°
-    %timespan   æ—¶é—´é—´éš”
-    %varargin   æ•°æ®
+    %»æÖÆ        n * n
+    %base       ±ßÊý
+    %times      ´ÎÊý
+    %timespan   Ê±¼ä¼ä¸ô
+    %varargin   Êý¾Ý
     close all;
     if (length(varargin) > 0)
         data = varargin{1};
@@ -23,4 +23,4 @@ function testDearCellAndDrawBeeShap(n,base,times,timespan,varargin)
         clf('reset');
     end
     drawBeeShap(0,1,base,5,data,1,1);
-endÿÿ
+end?

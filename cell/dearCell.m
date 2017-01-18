@@ -1,14 +1,14 @@
 function data_ = dearCell(type_,data,fn,varargin)
-    %é…åˆdrawBeeShap.mæ–‡ä»¶ä¸€èµ·ä½¿ç”¨
-    %data       æ•°æ®
-    %type_      ç±»å‹
-    %               = 3 ä¸‰è§’å½¢
-    %               = 4 æ­£æ–¹å½¢
-    %               = 6 å…­è§’å½¢
-    %fn         å¯¹æ¯ä¸€ä¸ªå…ƒåŒ…çš„å¤„ç†å‡½æ•°(exampleè°ƒç”¨ä¾‹å­å‡½æ•°)
-    %               è¿™é‡Œä»…å°†æ•°æ®ä¾æ¬¡æ”¾å…¥
-    %varargin   è¾¹ç•Œæ•°æ®é»˜è®¤å€¼
-    %               è¿™é‡Œé»˜è®¤è¾¹ç•Œæ•°æ®ä¸º0
+    %ÅäºÏdrawBeeShap.mÎÄ¼şÒ»ÆğÊ¹ÓÃ
+    %data       Êı¾İ
+    %type_      ÀàĞÍ
+    %               = 3 Èı½ÇĞÎ
+    %               = 4 Õı·½ĞÎ
+    %               = 6 Áù½ÇĞÎ
+    %fn         ¶ÔÃ¿Ò»¸öÔª°üµÄ´¦Àíº¯Êı(exampleµ÷ÓÃÀı×Óº¯Êı)
+    %               ÕâÀï½ö½«Êı¾İÒÀ´Î·ÅÈë
+    %varargin   ±ß½çÊı¾İÄ¬ÈÏÖµ
+    %               ÕâÀïÄ¬ÈÏ±ß½çÊı¾İÎª0
     dearFn = {
                 @forNone,
                 @forNone,
@@ -20,7 +20,7 @@ function data_ = dearCell(type_,data,fn,varargin)
     if (strcmp(class(fn),'char') == 1)
         fn = @exampleFn;
     elseif (strcmp(class(fn),'function_handle') == 0)
-        fprintf(2,'å¤„ç†å‡½æ•°æ— æ•ˆ.');
+        fprintf(2,'´¦Àíº¯ÊıÎŞĞ§.');
         return ;
     end
 
@@ -52,7 +52,7 @@ function data_ = dearCell(type_,data,fn,varargin)
     end
 end
 
-%ç®€å•çš„å¤„ç†å‡½æ•°
+%¼òµ¥µÄ´¦Àíº¯Êı
 function data = exampleFn(data)
     data = mean(data);
 end
@@ -73,9 +73,9 @@ function data_ = forNone(data,fn,b)
 end
 
 function data_ = forAll(data,fn,borderNum,mod_Number,base_Number,dir)
-    %mod_Number     è·¯å¾„æ•°é‡
-    %base_Number    è¾¹çš„æ•°é‡
-    %dir            è·¯å¾„
+    %mod_Number     Â·¾¶ÊıÁ¿
+    %base_Number    ±ßµÄÊıÁ¿
+    %dir            Â·¾¶
     data_ = zeros(size(data));
     [h_,w_] = size(data);
     for i = 1 : h_
@@ -95,4 +95,4 @@ function data_ = forAll(data,fn,borderNum,mod_Number,base_Number,dir)
         end
     end
 end
-ÿÿ
+?
