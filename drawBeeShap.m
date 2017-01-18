@@ -1,41 +1,53 @@
-%±ê*£¨ĞÇºÅ£©±ØÒªµÄ£¬Í¬Ê±±ê ^ Îª¶à¸öÑ¡Ò»¸ö¼´¿É(^1±íÊ¾¶à¸ö±êÓĞ^1µÄÓï¾äÖĞ£¬Ö»ÒªÓĞÒ»¸ö´æÔÚ¼´¿É)
-%ÀıÈçÒÔÏÂÊµÀıÖĞ£¬½ö½öĞèÒª
+%æ ‡*ï¼ˆæ˜Ÿå·ï¼‰å¿…è¦çš„ï¼ŒåŒæ—¶æ ‡ ^ ä¸ºå¤šä¸ªé€‰ä¸€ä¸ªå³å¯(^1è¡¨ç¤ºå¤šä¸ªæ ‡æœ‰^1çš„è¯­å¥ä¸­ï¼Œåªè¦æœ‰ä¸€ä¸ªå­˜åœ¨å³å¯)
+%ä¾‹å¦‚ä»¥ä¸‹å®ä¾‹ä¸­ï¼Œä»…ä»…éœ€è¦
 %	data = int32(rand(20,20) * 60);
-%	drawBeeShap(cool(61),3,5,data);
+%	drawBeeShap(cool(61),1,3,5,data);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %	*^1:data_ = [1,0,2,5;2,0,5,5;5,0,0,1;1,0,2,2];
-%»ñÖªÊ¹ÓÃËæ»úº¯Êı²úÉúdata
+%è·çŸ¥ä½¿ç”¨éšæœºå‡½æ•°äº§ç”Ÿdata
 %	*^1:data = int32(rand(20,20) * 60);
-%»æÖÆ·äÎÑĞÎ×´ drawBeeShap({'red','blue','green','yellow'},6,5,data);
-%»æÖÆÈı½ÇĞÎ	drawBeeShap({'red','blue','green','yellow'},3,5,data);
-%Ê¹ÓÃhot»òcoolÀ´²úÉúÑÕÉ«
-%	hot		*^2:drawBeeShap(hot(61),3,5,data);
-%	cool	*^2:drawBeeShap(cool(61),3,5,data);
-%	varargin : (À©Õ¹¹¦ÄÜ)
-%	0	Ê¹ÓÃ³£Á¿£¨Ê¹ÓÃÓÚ¶à´ÎÊ¹ÓÃ¸Ãº¯ÊıÊ±£©
-%		µ±³£Á¿ÊÇ 0 Ê±½«·µ»Ø³£Á¿£¬µ±³£Á¿ÊÇ½á¹¹ÌåÊÇ½«Ê¹ÓÃ¸Ã¶ÔÏó×÷Îª³£Á¿
-%		*^2:c = drawBeeShap(cool(61),3,5,data,0,0);
-%		*^2:drawBeeShap(cool(61),3,5,data,0,c);
-%Ê¹ÓÃ×Ô¶¯ÑÕÉ«
-%	1	*^2:drawBeeShap(cool(61),3,5,data,1);
-%		*^2:drawBeeShap(0,3,5,data,1);
-%	2	*^2:drawBeeShap(cool(61),3,5,data,2,cool);
-%		*^2:drawBeeShap(0,3,5,data,2,cool);
-%	3	*^2:drawBeeShap(cool(61),3,5,data,3,@cool,61);
-%		*^2:drawBeeShap(0,3,5,data,3,@cool,61);
-%¡ø×¢Òâ£º¿ÉÒÔÔÚ varargin{1} == 0 Æäºó²¹³äÑÕÉ«²ÎÊı
+%ç»˜åˆ¶èœ‚çªå½¢çŠ¶ drawBeeShap({'red','blue','green','yellow'},1,6,5,data);
+%ç»˜åˆ¶ä¸‰è§’å½¢	drawBeeShap({'red','blue','green','yellow'},1,3,5,data);
+%ä½¿ç”¨hotæˆ–coolæ¥äº§ç”Ÿé¢œè‰²
+%	hot		*^2:drawBeeShap(hot(61),1,3,5,data);
+%	cool	*^2:drawBeeShap(cool(61),1,3,5,data);
+%	varargin : (æ‰©å±•åŠŸèƒ½)
+%	0	ä½¿ç”¨å¸¸é‡ï¼ˆä½¿ç”¨äºå¤šæ¬¡ä½¿ç”¨è¯¥å‡½æ•°æ—¶ï¼‰
+%		å½“å¸¸é‡æ˜¯ 0 æ—¶å°†è¿”å›å¸¸é‡ï¼Œå½“å¸¸é‡æ˜¯ç»“æ„ä½“æ˜¯å°†ä½¿ç”¨è¯¥å¯¹è±¡ä½œä¸ºå¸¸é‡
+%		*^2:c = drawBeeShap(cool(61),1,3,5,data,0,0);
+%		*^2:drawBeeShap(cool(61),1,3,5,data,0,c);
+%ä½¿ç”¨è‡ªåŠ¨é¢œè‰²
+%	1	*^2:drawBeeShap(cool(61),1,3,5,data,1);
+%		*^2:drawBeeShap(0,1,3,5,data,1);
+%	2	*^2:drawBeeShap(cool(61),1,3,5,data,2,cool);
+%		*^2:drawBeeShap(0,1,3,5,data,2,cool);
+%	3	*^2:drawBeeShap(cool(61),1,3,5,data,3,@cool,61);
+%		*^2:drawBeeShap(0,1,3,5,data,3,@cool,61);
+%â–²æ³¨æ„ï¼šå¯ä»¥åœ¨ varargin{1} == 0 å…¶åè¡¥å……é¢œè‰²å‚æ•°
 %		*^2:drawBeeShap(cool(200),3,5,data,0,0,2,@cool)
-function c = drawBeeShap(colors_,edges_,len_,data,varargin)
-	%colors_	ÑÕÉ«¡¾¶à¸öÑÕÉ«£¬ÓÃÓÚ¶à¸öÊıÖµ±íÊ¾Ê±¿ÉÓÃ¡¿
-	%edges_		±ßµÄÊıÁ¿£¨ÀıÈç£º6¡¾±íÊ¾ÕıÁù±ßĞÎ¡¿£©
-	%len_		±ßµÄ³¤¶È
-	%varargin	×Ô¶¯²¹³äÑÕÉ«(´ËÊ±µÚÒ»¸ö²ÎÊıËæÒâÌîĞ´)
-	%			1	×Ô¶¯Ä¬ÈÏÑÕÉ«£¨½ö468¸ö£©
-	%			1	×Ô¶¯Ä¬ÈÏÑÕÉ«£¨½ö468¸ö£©
-	%			2	Ê¹ÓÃº¯ÊıÀ´²úÉúÑÕÉ«£¬º¯ÊıÎŞ²Î
-	%				fn	(µÚ¶ş¸ö²ÎÊıÊÇÒ»¸öº¯Êı)
-	%			3	Ê¹ÓÃº¯ÊıÀ´²úÉúÑÕÉ«£¬²¢¸³Óè²ÎÊıÖµ
-	%				fn,arg(ËæºóÁ½¸ö²ÎÊıÊÇº¯ÊıºÍ²ÎÊı)
+%2017å¹´01æœˆ18æ—¥09:29:53æ–°å¢è¾¹æ¡†é¢œè‰²
+%ä¾‹å­
+%	data = int32(rand(20,20) * 60);
+%	drawBeeShap(cool(61),1,6,5,data);
+%	>>>(ç­‰åŒäº)    drawBeeShap(cool(61),'black',6,5,data);
+%	>>>(ç­‰åŒäº)    drawBeeShap(cool(61),[0 0 0],6,5,data);
+%	drawBeeShap(cool(61),2,6,5,data);
+%	drawBeeShap(cool(61),[0.5 0.5 0.5],6,5,data);
+function c = drawBeeShap(colors_,borderColor,edges_,len_,data,varargin)
+	%colors_        é¢œè‰²ã€å¤šä¸ªé¢œè‰²ï¼Œç”¨äºå¤šä¸ªæ•°å€¼è¡¨ç¤ºæ—¶å¯ç”¨ã€‘
+    %borderColor    è¾¹æ¡†é¢œè‰²
+    %                   = 1 æ—¶ä¸ºæ— è¾¹æ¡†(å³é»‘è‰²è¾¹æ¡†)
+    %                   = 2 æ—¶ä¸ºåŒæ¿è‰²è¾¹æ¡†
+    %                   = [r g b] æ—¶ä¸ºé»˜è®¤æŒ‡å®šè¾¹æ¡† (ä¹Ÿå¯ä»¥æ˜¯é¢œè‰²å 'black')
+	%edges_         è¾¹çš„æ•°é‡ï¼ˆä¾‹å¦‚ï¼š6ã€è¡¨ç¤ºæ­£å…­è¾¹å½¢ã€‘ï¼‰
+	%len_           è¾¹çš„é•¿åº¦
+	%varargin       è‡ªåŠ¨è¡¥å……é¢œè‰²(æ­¤æ—¶ç¬¬ä¸€ä¸ªå‚æ•°éšæ„å¡«å†™)
+	%               1	è‡ªåŠ¨é»˜è®¤é¢œè‰²ï¼ˆä»…468ä¸ªï¼‰
+	%               1	è‡ªåŠ¨é»˜è®¤é¢œè‰²ï¼ˆä»…468ä¸ªï¼‰
+	%               2	ä½¿ç”¨å‡½æ•°æ¥äº§ç”Ÿé¢œè‰²ï¼Œå‡½æ•°æ— å‚
+	%                   fn	(ç¬¬äºŒä¸ªå‚æ•°æ˜¯ä¸€ä¸ªå‡½æ•°)
+	%               3	ä½¿ç”¨å‡½æ•°æ¥äº§ç”Ÿé¢œè‰²ï¼Œå¹¶èµ‹äºˆå‚æ•°å€¼
+	%                   fn,arg(éšåä¸¤ä¸ªå‚æ•°æ˜¯å‡½æ•°å’Œå‚æ•°)
 	%c = constValue_();
 	cdata = unique(data);
 	colorSheet = containers.Map();
@@ -71,13 +83,13 @@ function c = drawBeeShap(colors_,edges_,len_,data,varargin)
 			colors_ = var_{2};
 			colors_ = colors_(var_{3});
 		else
-			disp(['error : ²ÎÊı²»ÕıÈ·']);
+			disp(['error : å‚æ•°ä¸æ­£ç¡®']);
 		end
 	else
 		c = constValue_();
 	end
 	if (length(cdata) <= length(colors_))
-		%ĞÎ³ÉÑÕÉ«±í
+		%å½¢æˆé¢œè‰²è¡¨
 		csize_ = size(colors_);
 		if (csize_(1) == 1)
 			for i = 1 : length(cdata)
@@ -89,19 +101,19 @@ function c = drawBeeShap(colors_,edges_,len_,data,varargin)
 			end
 		end
 		if (edges_ == 6)
-			forSix_(c,len_,colorSheet,data);
+			forSix_(c,borderColor,len_,colorSheet,data);
 		elseif (edges_ == 3)
-			forThree(c,len_,colorSheet,data);
+			forThree(c,borderColor,len_,colorSheet,data);
 		elseif (edges_ == 4)
-			forFour(c,len_,colorSheet,data);
+			forFour(c,borderColor,len_,colorSheet,data);
 		end
 	else
-		display(['ÑÕÉ«Öµ²»×ã']);
+		display(['é¢œè‰²å€¼ä¸è¶³']);
 	end
 end
 
 function [c] = constValue_() 
-	%»ñÈ¡Ò»Ğ©³£ÓÃµÄÊıÖµ
+	%è·å–ä¸€äº›å¸¸ç”¨çš„æ•°å€¼
 	c.sqrt2 = sqrt(2);
 	c.sqrt2_h = sqrt(2) / 2;
 	c.sqrt3 = sqrt(3);
@@ -113,16 +125,16 @@ function [c] = constValue_()
 	c.color = c.color / 256;
 end
 
-function forSix_(c,len_,colorSheet,data)
-	%colorSheet ÑÕÉ«±í
-	%ÕÒ³öµÚÒ»¸öµã (x,y) -> (len_,sqrt(3) * len_)
+function forSix_(c,borderColor,len_,colorSheet,data)
+	%colorSheet é¢œè‰²è¡¨
+	%æ‰¾å‡ºç¬¬ä¸€ä¸ªç‚¹ (x,y) -> (len_,sqrt(3) * len_)
 	x = [len_];
 	y = [c.sqrt3 * len_];
 	[h_,w_] = size(data);
-	%ÕÒ³öµÚÒ»ĞĞµÄËùÓĞµã
-	%	Ã¿Ò»¸öÏÂÒ»¸öµãµÄ¹æÂÉÊÇ
-	%		Íù×ó¼Ó3/2*len_,
-	%		´¹Ö±ÉÏÕı¸ºsqrt(3) / 2 * len_ £¨ÎÒÕâÀïÊÇÏÈ¼Óºó¼õ£©
+	%æ‰¾å‡ºç¬¬ä¸€è¡Œçš„æ‰€æœ‰ç‚¹
+	%	æ¯ä¸€ä¸ªä¸‹ä¸€ä¸ªç‚¹çš„è§„å¾‹æ˜¯
+	%		å¾€å·¦åŠ 3/2*len_,
+	%		å‚ç›´ä¸Šæ­£è´Ÿsqrt(3) / 2 * len_ ï¼ˆæˆ‘è¿™é‡Œæ˜¯å…ˆåŠ åå‡ï¼‰
 	dx = 1.5 * len_;
 	dy = c.sqrt3_h * len_;
 	for i = 2 : w_%length(data)
@@ -130,22 +142,22 @@ function forSix_(c,len_,colorSheet,data)
 		y(i) = y(i - 1) + dy;
 		dy = -dy;
 	end
-	%»æÖÆµÚÒ»ĞĞ
+	%ç»˜åˆ¶ç¬¬ä¸€è¡Œ
 	for i = 1 : w_%length(data)
-		drawOneShap_(x(i),y(i),6,len_,colorSheet(num2str(data(1,i))));
+		drawOneShap_(x(i),y(i),6,len_,colorSheet(num2str(data(1,i))),borderColor);
 	end
-	%µÚ¶şĞĞ¿ªÊ¼£¬Ã¿Ò»ĞĞ¶¼ÊÇÇ°Ò»ĞĞ¸ß¶È¼ÓÉÏsqrt(3) * len_
+	%ç¬¬äºŒè¡Œå¼€å§‹ï¼Œæ¯ä¸€è¡Œéƒ½æ˜¯å‰ä¸€è¡Œé«˜åº¦åŠ ä¸Šsqrt(3) * len_
 	dY = c.sqrt3 * len_;
-	%ÒÔÏÂ±ß¼ÆËã±ß»æÖÆ
+	%ä»¥ä¸‹è¾¹è®¡ç®—è¾¹ç»˜åˆ¶
 	for i = 2 : h_
 		for j = 1 : w_
 			y(j) = y(j) + dY;
-			drawOneShap_(x(j),y(j),6,len_,colorSheet(num2str(data(i,j))));
+			drawOneShap_(x(j),y(j),6,len_,colorSheet(num2str(data(i,j))),borderColor);
 		end
 	end
 end
 
-function drawOneShap_(x_,y_,edges_,len_,color_,varargin)
+function drawOneShap_(x_,y_,edges_,len_,color_,borderColor,varargin)
 	extDeg = 0;
 	if (length(varargin) == 1) 
 		extDeg = varargin{1};
@@ -154,25 +166,33 @@ function drawOneShap_(x_,y_,edges_,len_,color_,varargin)
 	m = numel(t);
 	x = repmat(x_,[m,1]) + cos(t) * len_;
 	y = repmat(y_,[m,1]) + sin(t) * len_;
-	if (length(color_) > 1)
-		patch(x,y,color_);
-	else
-		patch(x,y,cell2mat(color_));
-	end
+    if (length(color_) == 1)
+        color_ = cell2mat(color_);
+    %else
+    end
+    if length(borderColor) == 1
+        if borderColor == 1
+            borderColor = 'black';
+        else
+            borderColor = color_;
+        end
+    %else
+    end
+	patch(x,y,1,'FaceColor',color_,'EdgeColor',borderColor);
 end
 
-function forThree(c,len_,colorSheet,data) 
-	%colorSheet ÑÕÉ«±í
-	%ÕÒ³öµÚÒ»¸öµã (x,y) -> (len_ / 2,len_ / sqrt(3))
+function forThree(c,borderColor,len_,colorSheet,data) 
+	%colorSheet é¢œè‰²è¡¨
+	%æ‰¾å‡ºç¬¬ä¸€ä¸ªç‚¹ (x,y) -> (len_ / 2,len_ / sqrt(3))
 	r_ = len_ / c.sqrt3;
 	extDeg = [c.pi_d6,- c.pi_d6];
 	[h_,w_] = size(data);
 	x = [len_ / 2];
 	y = [len_ / c.sqrt3 / 2];
-	%ÕÒ³öµÚÒ»ĞĞµÄËùÓĞµã
-	%	Ã¿Ò»¸öÏÂÒ»¸öµãµÄ¹æÂÉÊÇ
-	%		Íù×ó¼Ólen_/2,
-	%		´¹Ö±ÉÏÕı¸ºlen_ / sqrt(3) / 2£¨ÎÒÕâÀïÊÇÏÈ¼Óºó¼õ£©
+	%æ‰¾å‡ºç¬¬ä¸€è¡Œçš„æ‰€æœ‰ç‚¹
+	%	æ¯ä¸€ä¸ªä¸‹ä¸€ä¸ªç‚¹çš„è§„å¾‹æ˜¯
+	%		å¾€å·¦åŠ len_/2,
+	%		å‚ç›´ä¸Šæ­£è´Ÿlen_ / sqrt(3) / 2ï¼ˆæˆ‘è¿™é‡Œæ˜¯å…ˆåŠ åå‡ï¼‰
 	dx = len_ / 2;
 	dy = len_ / c.sqrt3 / 2;
 	for i = 2 : w_
@@ -180,82 +200,81 @@ function forThree(c,len_,colorSheet,data)
 		y(i) = y(i - 1) + dy;
 		dy = -dy;
 	end
-	%»æÖÆµÚÒ»ĞĞ
+	%ç»˜åˆ¶ç¬¬ä¸€è¡Œ
 	hold on;
 	for i = 1 : w_
-		drawOneShap_(x(i),y(i),3,r_,colorSheet(num2str(data(1,i))),extDeg(mod(i,2) + 1));
+		drawOneShap_(x(i),y(i),3,r_,colorSheet(num2str(data(1,i))),borderColor,extDeg(mod(i,2) + 1));
 	end
-	%µÚ¶şĞĞ¿ªÊ¼£¬Ã¿¸öÅ¼ÊıĞĞ¶¼ÊÇÇ°Ò»ĞĞ¸ß¶È¼ÓÉÏ [sqrt(3) * len_ , 2 * sqrt(3) * len_]
-	%µÚ¶şĞĞ¿ªÊ¼£¬Ã¿¸öÆæÊıĞĞ¶¼ÊÇÇ°Ò»ĞĞ¸ß¶È¼ÓÉÏ [2 * sqrt(3) * len_ , sqrt(3) * len_]
+	%ç¬¬äºŒè¡Œå¼€å§‹ï¼Œæ¯ä¸ªå¶æ•°è¡Œéƒ½æ˜¯å‰ä¸€è¡Œé«˜åº¦åŠ ä¸Š [sqrt(3) * len_ , 2 * sqrt(3) * len_]
+	%ç¬¬äºŒè¡Œå¼€å§‹ï¼Œæ¯ä¸ªå¥‡æ•°è¡Œéƒ½æ˜¯å‰ä¸€è¡Œé«˜åº¦åŠ ä¸Š [2 * sqrt(3) * len_ , sqrt(3) * len_]
 	dY = [2 * len_ / c.sqrt3,len_ / c.sqrt3];
-	%ÒÔÏÂ±ß¼ÆËã±ß»æÖÆ
+	%ä»¥ä¸‹è¾¹è®¡ç®—è¾¹ç»˜åˆ¶
 	for i = 2 : h_
 		isO = mod(i,2) + 1;
 		for j = 1 : w_
 			ex2 = mod(j + isO,2) + 1;
 			y(j) = y(j) + dY(ex2);
-			drawOneShap_(x(j),y(j),3,r_,colorSheet(num2str(data(i,j))),extDeg(ex2));
+			drawOneShap_(x(j),y(j),3,r_,colorSheet(num2str(data(i,j))),borderColor,extDeg(ex2));
 		end
 	end
 end
 
-function forFour(c,len_,colorSheet,data) 
-	%colorSheet ÑÕÉ«±í
-	%ÕÒ³öµÚÒ»¸öµã (x,y) -> (len_ / 2,len_ / 2)
+function forFour(c,borderColor,len_,colorSheet,data) 
+	%colorSheet é¢œè‰²è¡¨
+	%æ‰¾å‡ºç¬¬ä¸€ä¸ªç‚¹ (x,y) -> (len_ / 2,len_ / 2)
 	len__ = len_ / c.sqrt2;
 	[h_,w_] = size(data);
 	x = [len_ / 2];
 	y = len_ / 2;
-	%ÕÒ³öµÚÒ»ĞĞµÄËùÓĞµã
-	%	Ã¿Ò»¸öÏÂÒ»¸öµãµÄ¹æÂÉÊÇ
-	%		Íù×ó¼Ólen_/2
-	%		´¹Ö±¼Ólen_/2
+	%æ‰¾å‡ºç¬¬ä¸€è¡Œçš„æ‰€æœ‰ç‚¹
+	%	æ¯ä¸€ä¸ªä¸‹ä¸€ä¸ªç‚¹çš„è§„å¾‹æ˜¯
+	%		å¾€å·¦åŠ len_/2
+	%		å‚ç›´åŠ len_/2
 	dx = len_;
 	for i = 2 : w_
 		x(i) = x(i - 1) + dx;
 	end
-	%»æÖÆµÚÒ»ĞĞ
+	%ç»˜åˆ¶ç¬¬ä¸€è¡Œ
 	for i = 1 : w_
-		drawOneShap_(x(i),y,4,len__,colorSheet(num2str(data(1,i))),c.pi_d4);
+		drawOneShap_(x(i),y,4,len__,colorSheet(num2str(data(1,i))),borderColor,c.pi_d4);
 	end
-	%µÚ¶şĞĞ¿ªÊ¼£¬Ã¿Ò»ĞĞ¶¼ÊÇÇ°Ò»ĞĞ¸ß¶È¼ÓÉÏsqrt(3) * len_
+	%ç¬¬äºŒè¡Œå¼€å§‹ï¼Œæ¯ä¸€è¡Œéƒ½æ˜¯å‰ä¸€è¡Œé«˜åº¦åŠ ä¸Šsqrt(3) * len_
 	dY = len_;
-	%ÒÔÏÂ±ß¼ÆËã±ß»æÖÆ
+	%ä»¥ä¸‹è¾¹è®¡ç®—è¾¹ç»˜åˆ¶
 	for i = 2 : h_
 		y = y + dY;
 		for j = 1 : w_
-			drawOneShap_(x(j),y,4,len__,colorSheet(num2str(data(i,j))),c.pi_d4);
+			drawOneShap_(x(j),y,4,len__,colorSheet(num2str(data(i,j))),borderColor,c.pi_d4);
 		end
 	end
 end
 
-function forFour_(c,len_,colorSheet,data) 
-	%colorSheet ÑÕÉ«±í
-	%ÕÒ³öµÚÒ»¸öµã (x,y) -> (len_ / 2,len_ / 2)
+function forFour_(c,borderColor,len_,colorSheet,data) 
+	%colorSheet é¢œè‰²è¡¨
+	%æ‰¾å‡ºç¬¬ä¸€ä¸ªç‚¹ (x,y) -> (len_ / 2,len_ / 2)
 	[h_,w_] = size(data);
 	x = [len_ / 2];
 	y = len_ / 2;
-	%ÕÒ³öµÚÒ»ĞĞµÄËùÓĞµã
-	%	Ã¿Ò»¸öÏÂÒ»¸öµãµÄ¹æÂÉÊÇ
-	%		Íù×ó¼Ólen_/2
-	%		´¹Ö±¼Ólen_/2
+	%æ‰¾å‡ºç¬¬ä¸€è¡Œçš„æ‰€æœ‰ç‚¹
+	%	æ¯ä¸€ä¸ªä¸‹ä¸€ä¸ªç‚¹çš„è§„å¾‹æ˜¯
+	%		å¾€å·¦åŠ len_/2
+	%		å‚ç›´åŠ len_/2
 	dx = len_/2;
 	dy = len_/2;
 	for i = 2 : w_
 		x(i) = x(i - 1) + dx;
 	end
-	%»æÖÆµÚÒ»ĞĞ
+	%ç»˜åˆ¶ç¬¬ä¸€è¡Œ
 	for i = 1 : w_
-		drawOneShap_(x(i),y,4,len_,colorSheet(num2str(data(1,i))));
+		drawOneShap_(x(i),y,4,len_,colorSheet(num2str(data(1,i))),borderColor);
 	end
-	%µÚ¶şĞĞ¿ªÊ¼£¬Ã¿Ò»ĞĞ¶¼ÊÇÇ°Ò»ĞĞ¸ß¶È¼ÓÉÏsqrt(3) * len_
+	%ç¬¬äºŒè¡Œå¼€å§‹ï¼Œæ¯ä¸€è¡Œéƒ½æ˜¯å‰ä¸€è¡Œé«˜åº¦åŠ ä¸Šsqrt(3) * len_
 	dY = len_/2;
-	%ÒÔÏÂ±ß¼ÆËã±ß»æÖÆ
+	%ä»¥ä¸‹è¾¹è®¡ç®—è¾¹ç»˜åˆ¶
 	for i = 2 : h_
 		y = y + dY;
 		for j = 1 : w_
-			drawOneShap_(x(j),y,4,len_,colorSheet(num2str(data(i,j))));
+			drawOneShap_(x(j),y,4,len_,colorSheet(num2str(data(i,j))),borderColor);
 		end
 	end
 end
-
